@@ -25,7 +25,7 @@ public class Java6Multiprocess {
             ProcessBuilder pb;
             // Use process builder to start 2 processes multithreading.SayHello with parameter
             pb= new ProcessBuilder("notepad");
-           // pb.directory(new File("%windir%\\system32\\notepad.exe"));
+            pb.directory(new File("C:\\Users\\SkullFlight\\Desktop\\Notepad"));
             Process p1 = pb.start();
             Process p2 = pb.start();
             Process p3 = pb.start();
